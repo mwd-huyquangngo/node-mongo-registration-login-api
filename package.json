@@ -1,6 +1,9 @@
 {
     "name": "node-mongo-registration-login-api",
     "version": "1.0.0",
+    "engines": {
+        "node": ">=8.3.0"
+    },
     "description": "NodeJS + MongoDB API for User Management, Authentication and Registration",
     "license": "MIT",
     "repository": {
@@ -9,7 +12,9 @@
     },
     "scripts": {
         "start": "node ./server.js",
-        "start-dev": "nodemon ./server.js"
+        "start-dev": "nodemon ./server.js",
+        "eslint": "eslint .",
+        "eslint-fix": "eslint . --fix"
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
@@ -23,6 +28,9 @@
         "rootpath": "^0.1.2"
     },
     "devDependencies": {
+        "eslint": "^5.11.1",
+        "eslint-config-recommended": "^4.0.0",
+        "eslint-plugin-node": "^8.0.0",
         "nodemon": "^1.17.5"
     }
 }

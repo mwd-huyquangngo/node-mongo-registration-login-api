@@ -36,4 +36,7 @@ typings
 
 # Optional REPL history
 .node_repl_history
-/package-lock.json
+package-lock.json
+
+# VS Code settings
+.vscode/settings
